@@ -6,7 +6,7 @@ use App\Strategy\AdventureGame\Weapons\Interfaces\WeaponInterface;
 
 abstract class BaseCharacter
 {
-    public WeaponInterface $weapon;
+    protected WeaponInterface $weapon;
 
     public function fight(): string
     {
@@ -16,5 +16,10 @@ abstract class BaseCharacter
     public function setWeapon(WeaponInterface $weapon): void
     {
         $this->weapon = $weapon;
+    }
+
+    public function getWeapon(): WeaponInterface
+    {
+        return $this->weapon;
     }
 }
