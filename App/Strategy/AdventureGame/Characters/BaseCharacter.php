@@ -17,9 +17,4 @@ abstract class BaseCharacter
     {
         $this->weapon = $weapon;
     }
-
-    public function getWeapon(): WeaponInterface
-    {
-        return $this->weapon;
-    }
 }

@@ -2,7 +2,7 @@
 
 namespace App\Strategy\AdventureGame\Weapons\Interfaces;
 
-interface WeaponInterface 
+interface WeaponInterface
 {
     public function useWeapon(): string;
 }
