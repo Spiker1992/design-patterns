@@ -17,14 +17,14 @@ class RegistrationService
         'google' => GoogleRegistration::class,
     ];
 
-    public function handle(string $strategy, array $data): string 
+    public function handle(string $strategy, array $data): string
     {
         if (!isset(static::STRATEGY[$strategy])) {
             throw new Exception("Strategy '{$strategy}' is not supported");
         }
 
         $class = static::STRATEGY[$strategy];
-        
+
         return (new $class)->handle($data);
-    } 
+    }
 }
