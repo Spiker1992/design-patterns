@@ -1,6 +1,6 @@
 <?php
  
-namespace Tests\Unit\Strategy\Duck;
+namespace Tests\Feature\Strategy\Duck;
 
 use App\Strategy\Duck\Behaviors\Fly\FlyRocketPowered;
 use App\Strategy\Duck\DecoyDuck;
