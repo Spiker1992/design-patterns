@@ -5,8 +5,8 @@
         convertNoticesToExceptions="true" 
         convertWarningsToExceptions="true">
     <testsuites>
-        <testsuite name="Unit">
-            <directory>./Tests/Unit</directory>
+        <testsuite name="Feature">
+            <directory>./Tests/Feature</directory>
         </testsuite>
     </testsuites>
 </phpunit>
